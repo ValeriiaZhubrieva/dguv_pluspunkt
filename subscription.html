@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/SourceSans3-SemiBold.woff2" as="font" type="font/woff2" defer>
+		<link rel="preload" href="./assets/fonts/SourceSans3-Regular.woff2" as="font" type="font/woff2" defer>
+		<link rel="preload" href="./assets/fonts/SourceSans3-Medium.woff2" as="font" type="font/woff2" defer>
+		<link rel="preload" href="./assets/fonts/SourceSans3-Bold.woff2" as="font" type="font/woff2" defer>
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Subscription</title>
+		<script defer src="./js/app.min.js?v=1762704609274"></script>
+		<link rel="stylesheet" defer href="./css/app.min.css?v=1762704609274">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__top">
+					<div class="header__top-inner">
+						<div class="header__top-body">
+							<div class="header__top-text">Aktuelle Ausgabe mit Schwerpunkt Verkehrssicherheit erschienen</div>
+							<a href="#" class="header__top-btn button button--small">
+								<span>Jetzt als PDF herunterladen</span>
+								<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8 9V2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M13.5 9V13H2.5V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M10.5 6.5L8 9L5.5 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</a>
+						</div>
+						<button type="button" class="header__top-close">
+							<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15.625 4.375L4.375 15.625" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M15.625 15.625L4.375 4.375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="header__container">
+					<div class="header__body">
+						<div class="header__left">
+							<div class="header__sublogo">
+								<img src="./assets/img/plusPunkt.svg" alt="Image" loading="lazy">
+							</div>
+							<div class="header__logo-text mob-hide">
+								<img src="./assets/img/logo-text.svg" alt="Image" loading="lazy">
+							</div>
+							<a href="https://dguv.de/de/index.jsp" target="_blank" class="header__logo">
+								<img src="./assets/img/logo.svg" alt="Image" loading="lazy">
+							</a>
+						</div>
+						<div class="header__actions">
+							<button type="button" class="header__action" data-menu="accessible" data-menu-click="">
+								<span class="header__action-icon header__action-icon--small">
+									<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 2.25C10.0716 2.25 8.18657 2.82183 6.58319 3.89317C4.97982 4.96451 3.73013 6.48726 2.99218 8.26884C2.25422 10.0504 2.06114 12.0108 2.43735 13.9021C2.81355 15.7934 3.74215 17.5307 5.10571 18.8943C6.46928 20.2579 8.20656 21.1865 10.0979 21.5627C11.9892 21.9389 13.9496 21.7458 15.7312 21.0078C17.5127 20.2699 19.0355 19.0202 20.1068 17.4168C21.1782 15.8134 21.75 13.9284 21.75 12C21.7473 9.41498 20.7192 6.93661 18.8913 5.10872C17.0634 3.28084 14.585 2.25273 12 2.25ZM12 20.25C10.3683 20.25 8.77326 19.7661 7.41655 18.8596C6.05984 17.9531 5.00242 16.6646 4.378 15.1571C3.75358 13.6496 3.5902 11.9908 3.90853 10.3905C4.22685 8.79016 5.01259 7.32015 6.16637 6.16637C7.32016 5.01259 8.79017 4.22685 10.3905 3.90852C11.9909 3.59019 13.6497 3.75357 15.1571 4.37799C16.6646 5.00242 17.9531 6.05984 18.8596 7.41655C19.7661 8.77325 20.25 10.3683 20.25 12C20.2475 14.1873 19.3775 16.2843 17.8309 17.8309C16.2843 19.3775 14.1873 20.2475 12 20.25ZM10.5 7.5C10.5 7.20333 10.588 6.91332 10.7528 6.66665C10.9176 6.41997 11.1519 6.22771 11.426 6.11418C11.7001 6.00065 12.0017 5.97094 12.2926 6.02882C12.5836 6.0867 12.8509 6.22956 13.0607 6.43934C13.2704 6.64912 13.4133 6.91639 13.4712 7.20736C13.5291 7.49834 13.4994 7.79994 13.3858 8.07403C13.2723 8.34811 13.08 8.58238 12.8334 8.7472C12.5867 8.91203 12.2967 9 12 9C11.6022 9 11.2206 8.84196 10.9393 8.56066C10.658 8.27936 10.5 7.89782 10.5 7.5ZM17.25 10.5C17.25 10.6989 17.171 10.8897 17.0303 11.0303C16.8897 11.171 16.6989 11.25 16.5 11.25H12.75V12.5231L15.6244 16.8356C15.7348 17.0012 15.7749 17.2039 15.7358 17.399C15.6968 17.5942 15.5818 17.7659 15.4163 17.8762C15.2507 17.9866 15.048 18.0267 14.8528 17.9877C14.6577 17.9487 14.486 17.8337 14.3756 17.6681L12 14.1056L9.62438 17.6681C9.56972 17.7501 9.49944 17.8205 9.41756 17.8754C9.33568 17.9302 9.2438 17.9684 9.14717 17.9877C8.95202 18.0267 8.74935 17.9866 8.58375 17.8762C8.41816 17.7659 8.3032 17.5942 8.26417 17.399C8.22514 17.2039 8.26523 17.0012 8.37563 16.8356L11.25 12.5231V11.25H7.5C7.30109 11.25 7.11033 11.171 6.96967 11.0303C6.82902 10.8897 6.75 10.6989 6.75 10.5C6.75 10.3011 6.82902 10.1103 6.96967 9.96967C7.11033 9.82902 7.30109 9.75 7.5 9.75H16.5C16.6989 9.75 16.8897 9.82902 17.0303 9.96967C17.171 10.1103 17.25 10.3011 17.25 10.5Z" fill="currentColor"></path>
+									</svg>
+								</span>
+								<span class="header__action-text mob-hide">Barrierefreiheit</span>
+							</button>
+							<button type="button" class="header__action mob-hide" data-menu="search" data-menu-click="">
+								<span class="header__action-icon">
+									<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M21.5306 20.4694L16.8365 15.7762C18.1971 14.1428 18.8755 12.0478 18.7307 9.92694C18.5859 7.80607 17.629 5.82268 16.0591 4.38935C14.4892 2.95602 12.4271 2.18311 10.3019 2.23141C8.17663 2.27971 6.15181 3.1455 4.64864 4.64867C3.14547 6.15184 2.27968 8.17666 2.23138 10.3019C2.18308 12.4272 2.95599 14.4892 4.38932 16.0591C5.82265 17.629 7.80604 18.5859 9.92691 18.7307C12.0478 18.8755 14.1428 18.1971 15.7762 16.8366L20.4693 21.5306C20.539 21.6003 20.6218 21.6556 20.7128 21.6933C20.8038 21.731 20.9014 21.7504 21 21.7504C21.0985 21.7504 21.1961 21.731 21.2871 21.6933C21.3782 21.6556 21.4609 21.6003 21.5306 21.5306C21.6003 21.4609 21.6556 21.3782 21.6933 21.2872C21.731 21.1961 21.7504 21.0985 21.7504 21C21.7504 20.9015 21.731 20.8039 21.6933 20.7128C21.6556 20.6218 21.6003 20.5391 21.5306 20.4694ZM3.74997 10.5C3.74997 9.16498 4.14585 7.85993 4.88755 6.7499C5.62925 5.63987 6.68345 4.7747 7.91686 4.26381C9.15026 3.75292 10.5075 3.61925 11.8168 3.8797C13.1262 4.14015 14.3289 4.78302 15.2729 5.72703C16.2169 6.67103 16.8598 7.87377 17.1203 9.18314C17.3807 10.4925 17.247 11.8497 16.7362 13.0831C16.2253 14.3165 15.3601 15.3707 14.2501 16.1124C13.14 16.8541 11.835 17.25 10.5 17.25C8.71037 17.248 6.99463 16.5362 5.72919 15.2708C4.46375 14.0053 3.75195 12.2896 3.74997 10.5Z" fill="currentColor"></path>
+									</svg>
+								</span>
+							</button>
+							<button type="button" class="header__action btn-menu" data-menu="menu" data-menu-click="">
+								<span class="btn-menu__icon-pc">
+									<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M21 12C21 12.1989 20.921 12.3897 20.7803 12.5303C20.6397 12.671 20.4489 12.75 20.25 12.75H3.75C3.55109 12.75 3.36032 12.671 3.21967 12.5303C3.07902 12.3897 3 12.1989 3 12C3 11.8011 3.07902 11.6103 3.21967 11.4697C3.36032 11.329 3.55109 11.25 3.75 11.25H20.25C20.4489 11.25 20.6397 11.329 20.7803 11.4697C20.921 11.6103 21 11.8011 21 12ZM3.75 6.75H20.25C20.4489 6.75 20.6397 6.67098 20.7803 6.53033C20.921 6.38968 21 6.19891 21 6C21 5.80109 20.921 5.61032 20.7803 5.46967C20.6397 5.32902 20.4489 5.25 20.25 5.25H3.75C3.55109 5.25 3.36032 5.32902 3.21967 5.46967C3.07902 5.61032 3 5.80109 3 6C3 6.19891 3.07902 6.38968 3.21967 6.53033C3.36032 6.67098 3.55109 6.75 3.75 6.75ZM20.25 17.25H3.75C3.55109 17.25 3.36032 17.329 3.21967 17.4697C3.07902 17.6103 3 17.8011 3 18C3 18.1989 3.07902 18.3897 3.21967 18.5303C3.36032 18.671 3.55109 18.75 3.75 18.75H20.25C20.4489 18.75 20.6397 18.671 20.7803 18.5303C20.921 18.3897 21 18.1989 21 18C21 17.8011 20.921 17.6103 20.7803 17.4697C20.6397 17.329 20.4489 17.25 20.25 17.25Z" fill="currentColor"></path>
+									</svg>
+								</span>
+								<span class="btn-menu__icon-mob">
+									<svg width="26" height="19" viewbox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M15.3047 17.1758C15.7781 17.176 16.1709 17.5686 16.1709 18.042C16.1707 18.5499 15.778 18.908 15.3047 18.9082H0.866211C0.358163 18.9082 0.000187139 18.55 0 18.042C0 17.5684 0.35803 17.1758 0.866211 17.1758H15.3047ZM15.0391 0C19.197 0.00022763 22.5469 3.39601 22.5469 7.50781C22.5469 9.27498 21.9344 10.9036 20.918 12.1973L25.7578 17.002C26.0811 17.3599 26.081 17.9031 25.7578 18.2266C25.3998 18.5846 24.8566 18.5846 24.5332 18.2266L19.6934 13.4219V13.4336C18.3883 14.4498 16.7713 15.0273 15.0391 15.0273C10.8925 15.0273 7.53137 11.666 7.53125 7.51953C7.53125 3.37294 10.8809 0 15.0391 0ZM17.9258 2.5293C16.1241 1.47854 13.9184 1.4785 12.1514 2.5293C10.3495 3.58038 9.26367 5.45184 9.26367 7.50781C9.26369 9.56377 10.3495 11.481 12.1514 12.5205C13.9185 13.5714 16.124 13.5714 17.9258 12.5205C19.693 11.4694 20.8135 9.59842 20.8135 7.50781C20.8135 5.45184 19.693 3.56883 17.9258 2.5293ZM6.33008 11.4004C6.65346 12.0355 7.08059 12.6247 7.57715 13.1328H0.866211C0.358101 13.1328 9.96059e-05 12.7747 0 12.2666C0 11.7931 0.35803 11.4004 0.866211 11.4004H6.33008ZM5.83301 5.625C5.65977 6.17938 5.54425 6.75684 5.49805 7.35742H0.866211C0.358038 7.35739 1.20516e-05 6.99939 0 6.49121C0 6.01767 0.35803 5.62504 0.866211 5.625H5.83301Z" fill="currentColor"></path>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+					<nav class="header__nav">
+						<ul class="header__nav-list">
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link link">Prävention</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link link">Rechtsfragen</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link link">Führung</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link link">Schulentwicklung</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link link">Digitale Schule</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link link">Unterrichtsmaterialien</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="accessible-block" data-menu-target="accessible">
+					<div class="accessible-block__container">
+						<div class="accessible-block__body">
+							<div class="accessible-block__head">
+								<button type="button" class="accessible-block__close" data-menu-close="">
+									<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M15.625 4.375L4.375 15.625" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M15.625 15.625L4.375 4.375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</button>
+							</div>
+							<div class="accessible-block__title">Barrierefreiheit</div>
+							<ul class="accessible-block__list">
+								<li class="accessible-block__item">
+									<a href="#" class="accessible-block__link link">Erklärung zur Barrierefreiheit</a>
+								</li>
+								<li class="accessible-block__item">
+									<a href="#" class="accessible-block__link link">Leichte Sprache</a>
+								</li>
+								<li class="accessible-block__item">
+									<a href="#" class="accessible-block__link link">Informationen in Deutscher Gebärdensprache (DGS)</a>
+								</li>
+								<li class="accessible-block__item">
+									<a href="#" class="accessible-block__link link">Kontakt zur Ansprechperson</a>
+								</li>
+								<li class="accessible-block__item">
+									<a href="#" class="accessible-block__link link">Barriere melden</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="search-block" data-menu-target="search">
+					<div class="search-block__inner">
+						<div class="search-block__container">
+							<div class="search-block__head">
+								<button type="button" class="search-block__close" data-menu-close="">
+									<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M15.625 4.375L4.375 15.625" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M15.625 15.625L4.375 4.375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</button>
+							</div>
+							<div class="search-block__body">
+								<div class="search-block__block">
+									<div class="search-block__title">Suche</div>
+									<div class="search-block__field input-field">
+										<input type="text" name="search" placeholder="Text" class="input-field__input input input--icon">
+										<button type="button" class="input-field__icon">
+											<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7 12C9.76142 12 12 9.76142 12 7C12 4.23858 9.76142 2 7 2C4.23858 2 2 4.23858 2 7C2 9.76142 4.23858 12 7 12Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M10.5356 10.5356L14 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="search-block__info">
+									<div class="search-block__subtitle">Beliebte thematische Schlagworte:</div>
+									<div class="search-block__tags tags">
+										<a href="#" class="tags__btn">Tag/ Schlagwort etc.</a>
+										<a href="#" class="tags__btn">Tag/ Schlagwort etc.</a>
+										<a href="#" class="tags__btn">Tag/ Schlagwort etc.</a>
+										<a href="#" class="tags__btn">Tag/ Schlagwort etc.</a>
+										<a href="#" class="tags__btn">Tag/ Schlagwort etc.</a>
+										<a href="#" class="tags__btn">Tag/ Schlagwort etc.</a>
+										<a href="#" class="tags__btn">Tag/ Schlagwort etc.</a>
+										<a href="#" class="tags__btn">Tag/ Schlagwort etc.</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu" data-menu-target="menu">
+					<div class="menu__container">
+						<div class="menu__head">
+							<div class="menu__left">
+								<div class="menu__sublogo">
+									<img src="./assets/img/plusPunkt.svg" alt="Image" loading="lazy">
+								</div>
+								<div class="menu__logo-text mob-hide">
+									<img src="./assets/img/logo-text.svg" alt="Image" loading="lazy">
+								</div>
+								<a href="https://dguv.de/de/index.jsp" class="menu__logo">
+									<img src="./assets/img/logo.svg" alt="Image" loading="lazy">
+								</a>
+							</div>
+							<button type="button" class="menu__close" data-menu-close="">
+								<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15.625 4.375L4.375 15.625" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M15.625 15.625L4.375 4.375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</button>
+						</div>
+						<div class="menu__search input-field">
+							<input type="text" name="search" placeholder="Text" class="input-field__input input input--icon">
+							<button type="button" class="input-field__icon">
+								<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7 12C9.76142 12 12 9.76142 12 7C12 4.23858 9.76142 2 7 2C4.23858 2 2 4.23858 2 7C2 9.76142 4.23858 12 7 12Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M10.5356 10.5356L14 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</button>
+						</div>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" class="menu__link link">
+										<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M13.5 7V3.5C13.5 3.36739 13.4473 3.24021 13.3536 3.14645C13.2598 3.05268 13.1326 3 13 3H3C2.86739 3 2.74021 3.05268 2.64645 3.14645C2.55268 3.24021 2.5 3.36739 2.5 3.5V7C2.5 13 8 14.5 8 14.5C8 14.5 13.5 13 13.5 7Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M5.5 8.5L7 10L10.5 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<span>Prävention</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link link">
+										<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8 2.5V13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M6.5 13.5H9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M3.5 5.5L12.5 3.5" stroke="#343330" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M1.5 10.5C1.5 11.6044 2.75 12 3.5 12C4.25 12 5.5 11.6044 5.5 10.5L3.5 5.5L1.5 10.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M10.5 8.5C10.5 9.60438 11.75 10 12.5 10C13.25 10 14.5 9.60438 14.5 8.5L12.5 3.5L10.5 8.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<span>Rechtsfragen</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link link">
+										<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12 7.5C12.5822 7.49956 13.1566 7.63492 13.6773 7.8953C14.1981 8.15569 14.651 8.53394 15 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M1 9C1.349 8.53394 1.80187 8.15569 2.32265 7.8953C2.84343 7.63492 3.41775 7.49956 4 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M8 11.5C9.38071 11.5 10.5 10.3807 10.5 9C10.5 7.61929 9.38071 6.5 8 6.5C6.61929 6.5 5.5 7.61929 5.5 9C5.5 10.3807 6.61929 11.5 8 11.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M4.5 13.5C4.85893 12.8909 5.3706 12.386 5.98444 12.0353C6.59827 11.6845 7.29302 11.5 8 11.5C8.70698 11.5 9.40173 11.6845 10.0156 12.0353C10.6294 12.386 11.1411 12.8909 11.5 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M10.0625 5C10.156 4.63785 10.3492 4.30918 10.6201 4.05131C10.891 3.79345 11.2288 3.61672 11.5952 3.5412C11.9615 3.46567 12.3416 3.49439 12.6925 3.62407C13.0433 3.75376 13.3507 3.97922 13.5798 4.27486C13.8089 4.57049 13.9506 4.92445 13.9886 5.29653C14.0267 5.66862 13.9596 6.04392 13.7951 6.37981C13.6305 6.7157 13.3751 6.99872 13.0578 7.19673C12.7405 7.39475 12.374 7.49981 12 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M3.99997 7.5C3.62594 7.49981 3.25947 7.39475 2.94216 7.19673C2.62485 6.99872 2.36942 6.7157 2.20489 6.37981C2.04035 6.04392 1.9733 5.66862 2.01135 5.29653C2.0494 4.92445 2.19103 4.57049 2.42015 4.27486C2.64926 3.97922 2.95669 3.75376 3.30751 3.62407C3.65833 3.49439 4.03849 3.46567 4.40481 3.5412C4.77113 3.61672 5.10894 3.79345 5.37986 4.05131C5.65078 4.30918 5.84396 4.63785 5.93747 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<span>Führung</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link link">
+										<svg width="17" height="16" viewbox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.5 13.5H15.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M5 5H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M8 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M5 7.5H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M8 7.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M5.5 13.5V10H8.5V13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M3 2.5V13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M11 13.5V2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M2.5 2.5H11.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M14 13.5V5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M11 5.5H14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<span>Schulentwicklung</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link link">
+										<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2 12.5V3.5C2 3.36739 2.05268 3.24021 2.14645 3.14645C2.24021 3.05268 2.36739 3 2.5 3H13.5C13.6326 3 13.7598 3.05268 13.8536 3.14645C13.9473 3.24021 14 3.36739 14 3.5V8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M1 12.5H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M10 12.5V10.5H14V12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<span>Digitale Schule</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link link">
+										<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8 12C8 11.6022 8.15804 11.2206 8.43934 10.9393C8.72064 10.658 9.10218 10.5 9.5 10.5H12.3881C12.7279 10.5001 13.0576 10.3848 13.3233 10.173C13.589 9.96126 13.7749 9.66558 13.8506 9.33437C13.9539 8.87962 14.004 8.41443 14 7.94812C13.9719 4.64687 11.24 1.96687 7.9375 2C6.35706 2.01646 4.84694 2.65586 3.7352 3.7793C2.62347 4.90274 1.99991 6.41947 2 8C2 10.6131 3.67062 12.59 6 13.4131C6.22616 13.4931 6.4682 13.5176 6.70581 13.4847C6.94342 13.4518 7.16967 13.3624 7.36558 13.224C7.56149 13.0855 7.72135 12.9022 7.83174 12.6892C7.94212 12.4762 7.99983 12.2399 8 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M8 4.1875C8.31066 4.1875 8.5625 4.43934 8.5625 4.75C8.5625 5.06066 8.31066 5.3125 8 5.3125C7.68934 5.3125 7.4375 5.06066 7.4375 4.75C7.4375 4.43934 7.68934 4.1875 8 4.1875Z" fill="currentColor" stroke="currentColor" stroke-width="0.125"></path>
+											<path d="M5.25 6.875C5.59518 6.875 5.875 6.59518 5.875 6.25C5.875 5.90482 5.59518 5.625 5.25 5.625C4.90482 5.625 4.625 5.90482 4.625 6.25C4.625 6.59518 4.90482 6.875 5.25 6.875Z" fill="currentColor"></path>
+											<path d="M5.25 10.375C5.59518 10.375 5.875 10.0952 5.875 9.75C5.875 9.40482 5.59518 9.125 5.25 9.125C4.90482 9.125 4.625 9.40482 4.625 9.75C4.625 10.0952 4.90482 10.375 5.25 10.375Z" fill="currentColor"></path>
+											<path d="M10.75 6.875C11.0952 6.875 11.375 6.59518 11.375 6.25C11.375 5.90482 11.0952 5.625 10.75 5.625C10.4048 5.625 10.125 5.90482 10.125 6.25C10.125 6.59518 10.4048 6.875 10.75 6.875Z" fill="currentColor"></path>
+										</svg>
+										<span>Unterrichtsmaterialien</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" class="menu__link link">Menschen in der Schule</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link link">Das Magazin</a>
+								</li>
+							</ul>
+							<div class="menu__info">
+								<div class="menu__text">Beliebte thematische Schlagworte:</div>
+								<div class="menu__tags tags">
+									<a href="#" class="tags__btn">Tag/ Schlagwort etc.</a>
+									<a href="#" class="tags__btn">Tag/ Schlagwort etc.</a>
+									<a href="#" class="tags__btn">Tag/ Schlagwort etc.</a>
+									<a href="#" class="tags__btn">Tag/ Schlagwort etc.</a>
+									<a href="#" class="tags__btn">Tag/ Schlagwort etc.</a>
+									<a href="#" class="tags__btn">Tag/ Schlagwort etc.</a>
+									<a href="#" class="tags__btn">Tag/ Schlagwort etc.</a>
+									<a href="#" class="tags__btn">Tag/ Schlagwort etc.</a>
+								</div>
+							</div>
+						</nav>
+						<div class="menu__bottom">
+							<nav class="menu__nav">
+								<ul class="menu__nav-list">
+									<li class="menu__nav-item">
+										<a href="#" class="menu__nav-link">Aboservice</a>
+									</li>
+									<li class="menu__nav-item">
+										<a href="#" class="menu__nav-link">Impressum</a>
+									</li>
+									<li class="menu__nav-item">
+										<a href="#" class="menu__nav-link">Datenschutz</a>
+									</li>
+								</ul>
+							</nav>
+							<a href="#" class="menu__btn button button--small">
+								<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.04055 3.87502C5.87741 3.58808 5.83438 3.24825 5.92087 2.92969C6.00735 2.61114 6.21633 2.33973 6.50219 2.17468C6.78805 2.00964 7.12758 1.96436 7.4467 2.04873C7.76582 2.1331 8.03862 2.34027 8.20555 2.62502L10.0806 5.87502" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M4.33258 5.91688L3.44258 4.375C3.27682 4.08782 3.23193 3.74656 3.31779 3.42628C3.40364 3.106 3.61321 2.83295 3.90039 2.66719C4.18757 2.50143 4.52884 2.45654 4.84912 2.5424C5.16939 2.62825 5.44245 2.83782 5.60821 3.125L7.55633 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M9.92935 10C9.56951 9.46827 9.42804 8.81846 9.53428 8.18525C9.64051 7.55203 9.9863 6.98397 10.5 6.59877L10.0825 5.87502C9.91672 5.58759 9.87193 5.24609 9.95796 4.92564C10.044 4.60518 10.2538 4.33203 10.5412 4.16627C10.8287 4.00051 11.1702 3.95572 11.4906 4.04175C11.8111 4.12778 12.0842 4.33759 12.25 4.62502L13.3319 6.50002C13.6602 7.06885 13.8732 7.69677 13.9588 8.34794C14.0445 8.99911 14.001 9.66076 13.8309 10.2951C13.6609 10.9295 13.3675 11.5242 12.9676 12.0452C12.5677 12.5661 12.0691 13.0033 11.5003 13.3316C10.3515 13.9946 8.98635 14.1742 7.70518 13.8307C6.42401 13.4872 5.33177 12.6488 4.66873 11.5L2.16873 7.16752C2.00558 6.88057 1.96256 6.54074 2.04904 6.22219C2.13553 5.90364 2.3445 5.63222 2.63036 5.46718C2.91622 5.30213 3.25576 5.25685 3.57488 5.34122C3.894 5.42559 4.16679 5.63276 4.33373 5.91752L5.5356 8.00002" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M12 2.11127C12.4135 2.22046 12.8013 2.41044 13.141 2.67024C13.4808 2.93005 13.7657 3.25455 13.9794 3.62502L14 3.66064" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M4.66375 14.5C3.96647 13.9491 3.3806 13.2703 2.9375 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+								<span>Kontakt</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page page--subscription">
+				<div class="breadcrumbs">
+					<div class="breadcrumbs__container">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="#" class="breadcrumbs__link link">DGUV pluspunkt</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__link is-active">Aboservice</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<section class="hero blue-bg">
+					<div class="hero__container">
+						<div class="hero__body">
+							<figure class="hero__img">
+								<img alt="Image" loading="lazy" src="./assets/img/hero/image-4.webp">
+							</figure>
+							<div class="hero__content">
+								<h1 class="hero__title title title--h1">Headline zum Aboservice des pluspunkt Magazins</h1>
+								<div class="hero__text">
+									Lorem ipsum dolor sit amet consectetur. Dis nunc sed duis sapien malesuada ullamcorper morbi vestibulum nullam. Nulla purus amet penatibus vel id a donec in enim.
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="formblock">
+					<div class="formblock__container">
+						<form action="#" class="formblock__form">
+							<div class="formblock__inner">
+								<div data-fls-radio="" class="options width-full">
+									<label class="options__item">
+										<input class="options__input" type="radio" value="1" name="option">
+										<span class="options__text">Neubestellung</span>
+									</label>
+									<label class="options__item">
+										<input class="options__input" type="radio" value="2" name="option">
+										<span class="options__text">Abbestellung</span>
+									</label>
+									<label class="options__item">
+										<input class="options__input" type="radio" value="3" name="option">
+										<span class="options__text">Adressänderung</span>
+									</label>
+								</div>
+							</div>
+							<div class="formblock__inner">
+								<div class="input-block">
+									<label class="input-block__label">Zuständige Unfallkasse*</label>
+									<select name="form[]" class="input-block__sel select">
+										<option value="1" selected>bitte auswählen</option>
+										<option value="2">bitte auswählen №2</option>
+										<option value="3">bitte auswählen №3</option>
+										<option value="4">bitte auswählen №4</option>
+									</select>
+								</div>
+							</div>
+							<div class="formblock__inner">
+								<div class="formblock__subtitle width-full">Ihre bisherigen Kontakdaten mit Lieferadresse</div>
+								<div class="input-block">
+									<label class="input-block__label">Firma/ Einrichtung</label>
+									<div class="input-field is-error">
+										<input autocomplete="off" type="text" name="form[]" placeholder="Firma/ Einrichtung" class="input-field__input input is-error">
+									</div>
+									<div class="input-block__error">Error</div>
+								</div>
+								<div class="input-block">
+									<label class="input-block__label">Abteilung</label>
+									<div class="input-field">
+										<input autocomplete="off" type="text" name="form[]" placeholder="Abteilung" class="iinput-field__input input">
+									</div>
+								</div>
+								<div class="input-block">
+									<label class="input-block__label">Vorname*</label>
+									<div class="input-field">
+										<input autocomplete="off" type="text" name="form[]" placeholder="Vorname*" class="input-field__input input">
+									</div>
+								</div>
+								<div class="input-block">
+									<label class="input-block__label">Nachname*</label>
+									<div class="input-field">
+										<input autocomplete="off" type="text" name="form[]" placeholder="Nachname*" class="input-field__input input">
+									</div>
+								</div>
+								<div class="input-block">
+									<label class="input-block__label">Straße. Nummer*</label>
+									<div class="input-field">
+										<input autocomplete="off" type="text" name="form[]" placeholder="Straße. Nummer*" class="input-field__input input">
+									</div>
+								</div>
+								<div class="input-block">
+									<label class="input-block__label">PLZ, Ort*</label>
+									<div class="input-field">
+										<input autocomplete="off" type="text" name="form[]" placeholder="PLZ, Ort*" class="input-field__input input">
+									</div>
+								</div>
+								<div class="input-block">
+									<label class="input-block__label">E-Mail-Adresse*</label>
+									<div class="input-field">
+										<input autocomplete="off" type="text" name="form[]" placeholder="E-Mail-Adresse*" class="input-field__input input">
+									</div>
+								</div>
+							</div>
+							<div class="formblock__inner">
+								<div class="formblock__subtitle width-full">Ihre neuen Kontaktdaten mit Lieferadresse</div>
+								<div class="input-block">
+									<label class="input-block__label">Firma/ Einrichtung</label>
+									<div class="input-field">
+										<input autocomplete="off" type="text" name="form[]" placeholder="Firma/ Einrichtung" class="input-field__input input">
+									</div>
+								</div>
+								<div class="input-block">
+									<label class="input-block__label">Abteilung</label>
+									<div class="input-field">
+										<input autocomplete="off" type="text" name="form[]" placeholder="Abteilung" class="input-field__input input">
+									</div>
+								</div>
+								<div class="input-block">
+									<label class="input-block__label">Vorname*</label>
+									<div class="input-field">
+										<input autocomplete="off" type="text" name="form[]" placeholder="Vorname*" class="input-field__input input">
+									</div>
+								</div>
+								<div class="input-block">
+									<label class="input-block__label">Nachname*</label>
+									<div class="input-field">
+										<input autocomplete="off" type="text" name="form[]" placeholder="Nachname*" class="input-field__input input">
+									</div>
+								</div>
+								<div class="input-block">
+									<label class="input-block__label">Straße. Nummer*</label>
+									<div class="input-field">
+										<input autocomplete="off" type="text" name="form[]" placeholder="Straße. Nummer*" class="input-field__input input">
+									</div>
+								</div>
+								<div class="input-block">
+									<label class="input-block__label">PLZ, Ort*</label>
+									<div class="input-field">
+										<input autocomplete="off" type="text" name="form[]" placeholder="PLZ, Ort*" class="input-field__input input">
+									</div>
+								</div>
+								<div class="input-block">
+									<label class="input-block__label">E-Mail-Adresse*</label>
+									<div class="input-field">
+										<input autocomplete="off" type="text" name="form[]" placeholder="E-Mail-Adresse*" class="input-field__input input">
+									</div>
+								</div>
+							</div>
+							<div class="formblock__inner">
+								<div class="input-block width-full">
+									<label class="input-block__label">Nachricht</label>
+									<textarea name="form[]" placeholder="Nachricht" class="input-block__input input"></textarea>
+								</div>
+								<div class="input-block width-full">
+									<label class="input-block__label">Kundennummer, falls zur Hand</label>
+									<div class="input-field">
+										<input autocomplete="off" type="text" name="form[]" placeholder="Kundennummer, falls zur Hand" class="input-field__input input">
+									</div>
+								</div>
+								<label data-fls-checkbox="" class="checkbox">
+									<input data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<span class="checkbox__text">
+										Hiermit erkläre ich mich einverstanden, dass meine in das
+						Kontaktformular eingegebenen Daten elektronisch gespeichert
+						und zum Zweck der Kontaktaufnahme verarbeitet und genutzt werden. Mir ist bekannt, dass ich
+						meine Einwilligung jederzeit
+						widerrufen kann. *
+									</span>
+								</label>
+							</div>
+							<button type="submit" class="formblock__btn button button--dark">
+								<span>Senden</span>
+								<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.75 9.25L10 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M13.9811 2.63635C14.0052 2.55082 14.006 2.46041 13.9836 2.37444C13.9612 2.28846 13.9162 2.21001 13.8534 2.14718C13.7905 2.08435 13.7121 2.03939 13.6261 2.01695C13.5401 1.9945 13.4497 1.99537 13.3642 2.01948L1.36419 5.65823C1.26622 5.68588 1.17903 5.74277 1.11426 5.8213C1.04949 5.89984 1.01024 5.99627 1.00174 6.09771C0.993251 6.19916 1.01592 6.30077 1.06673 6.38898C1.11754 6.47719 1.19406 6.5478 1.28607 6.59135L6.75044 9.2501L9.40919 14.7139C9.45275 14.8059 9.52335 14.8824 9.61156 14.9332C9.69977 14.984 9.80139 15.0067 9.90283 14.9982C10.0043 14.9897 10.1007 14.9504 10.1792 14.8857C10.2578 14.8209 10.3147 14.7337 10.3423 14.6357L13.9811 2.63635Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</button>
+						</form>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__body">
+						<div class="footer__logos">
+							<div class="footer__sublogo">
+								<img src="./assets/img/plusPunkt.svg" alt="Image" loading="lazy">
+							</div>
+							<a href="https://dguv.de/de/index.jsp" class="footer__logo">
+								<img src="./assets/img/logo.svg" alt="Image" loading="lazy">
+							</a>
+						</div>
+						<div class="footer__info">
+							<div class="footer__descr">
+								<p>
+									„pluspunkt“ ist ein Angebot der Unfallkassen für Schulen. Es erscheint vier Mal im Jahr und wird
+						Schulen kostenfrei zur Verfügung gestellt.
+									<br>
+									Namentlich gezeichnete Beiträge geben die Meinung der Autorinnen und Autoren wieder und nicht
+						notwendigerweise die Position der DGUV und ihrer Mitglieder.
+								</p>
+								<p>Die Kontaktdaten aller Unfallversichersicherungsträger finden Sie hier:</p>
+							</div>
+							<div class="footer__links">
+								<a href="https://dguv.de/de/index.jsp" class="footer__link link">
+									<span>Berufsgenossenschaften</span>
+									<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2.5 8H13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M9 3.5L13.5 8L9 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</a>
+								<a href="#" class="footer__link link">
+									<span>Unfallkassen</span>
+									<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2.5 8H13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M9 3.5L13.5 8L9 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="footer__col">
+							<div class="footer__title">Kontakt</div>
+							<ul class="footer__list">
+								<li>Deutsche Gesetzliche Unfallversicherung e.V. (DGUV)
+						Glinkastraße 40</li>
+								<li>10117 Berlin</li>
+								<li>
+									Tel.:
+									<a href="tel:030130010">030 13001-0</a>
+									(Zentrale)
+								</li>
+								<li>Fax: 030 13001-9876</li>
+							</ul>
+							<div class="footer__links">
+								<a href="https://dguv.de/de/index.jsp" class="footer__link link">
+									<span>DGUV</span>
+									<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2.5 8H13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M9 3.5L13.5 8L9 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</a>
+								<a href="#" class="footer__link link">
+									<span>E-Mail an die Redaktion</span>
+									<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2.5 8H13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M9 3.5L13.5 8L9 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__inner">
+						<nav class="footer__nav">
+							<ul class="footer__nav-list">
+								<li class="footer__nav-item">
+									<a href="#" class="footer__nav-link">Das Magazin</a>
+								</li>
+								<li class="footer__nav-item">
+									<a href="#" class="footer__nav-link">Menschen in der Schule</a>
+								</li>
+								<li class="footer__nav-item">
+									<a href="#" class="footer__nav-link">Aboservice</a>
+								</li>
+								<li class="footer__nav-item">
+									<a href="#" class="footer__nav-link">Impressum</a>
+								</li>
+								<li class="footer__nav-item">
+									<a href="#" class="footer__nav-link">Datenschutz</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="footer__bottom">
+							<div class="footer__copy">© 2025 Deutsche Gesetzliche Unfallversicherung. Alle Rechte vorbehalten.</div>
+							<div class="footer__social social-block">
+								<a href="#" class="social-block__link">Facebook</a>
+								<a href="#" class="social-block__link">Instagram</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -204,13 +204,6 @@
       });
     });
   }
-  const headerTop = document.querySelector(".header__top");
-  if (headerTop) {
-    const headerTopClose = headerTop.querySelector(".header__top-close");
-    headerTopClose.addEventListener("click", () => {
-      headerTop.classList.add("hide");
-    });
-  }
 })();
 function isObject$1(obj) {
   return obj !== null && typeof obj === "object" && "constructor" in obj && obj.constructor === Object;
